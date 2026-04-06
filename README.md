@@ -106,28 +106,42 @@ my-agent/
 
 ## How to Run
 
-### 1. Install dependencies
-```bash
-pip install fastapi uvicorn groq python-dotenv
-```
+### Option 1: Run with Docker (Recommended)
+This method ensures the environment is identical to the one used during development and handles all dependencies automatically.
 
-### 2. Set up your API key
-Create a `.env` file in the project root:
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
-Get a free key at: **https://console.groq.com**
+1.  **Build the image:**
+    ```bash
+    docker build -t relationship-agent .
+    ```
 
-### 3. Start the server
-```bash
-uvicorn main:app --reload
-```
+2.  **Run the container:** *(Replace `your_key` with your actual Groq API Key)*
+    ```bash
+    docker run -p 7860:7860 -e GROQ_API_KEY="your_key" relationship-agent
+    ```
 
-### 4. Open in browser
-```
-http://localhost:8000
-```
+3.  **Access the App:** Open your browser to: [http://localhost:7860](http://localhost:7860)
 
+---
+
+### Option 2: Run Locally (Manual)
+Use this option if you prefer to run the Python script directly on your host machine.
+
+1.  **Install dependencies:**
+    ```bash
+    pip install fastapi uvicorn groq python-dotenv
+    ```
+
+2.  **Set up API key:** Create a `.env` file in the project root directory and add your key:
+    ```text
+    GROQ_API_KEY=your_groq_api_key_here
+    ```
+
+3.  **Start the server:**
+    ```bash
+    uvicorn main:app --reload --port 8000
+    ```
+
+4.  **Access the App:** Open your browser to: [http://localhost:8000](http://localhost:8000)
 ---
 
 
