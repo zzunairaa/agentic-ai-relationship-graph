@@ -130,33 +130,29 @@ http://localhost:8000
 
 ---
 
-## Features Implemented
 
-### Core (Assignment Requirements)
-| Requirement | Implementation |
-|---|---|
+## Features & Implementation
+
+| Feature | Implementation |
+|--------|--------------|
 | Read user message | FastAPI `/chat` endpoint receives message |
 | Extract person name | LLM extracts from natural language |
 | Extract relationship type | LLM returns relationship label |
-| Extract action (add/remove) | LLM returns add/remove/update |
-| Update relationship graph | `graph.py` add/remove functions |
-| Generate contextual response | Graph passed to LLM for response |
-| JSON graph with nodes + edges | `graph.json` with exact required format |
-| Only User→Person relationships | Enforced in both prompt and code |
-
-### Beyond Requirements (Bonus)
-| Feature | Description |
-|---|---|
-| Update action | Handles relationship changes (e.g. colleague → manager) |
-| Multiple people per message | Extracts all people mentioned in one message |
-| Persistent graph | `graph.json` survives server restarts |
-| Relationship history | `removed` list preserves ended relationships |
-| Empathy responses | Agent remembers past relationships and responds with care |
-| Indirect relationship blocking | Ignores "Hassan's brother" — not User's direct relation |
-| No-name blocking | Ignores "I met my sister" — no name given |
-| Generic name blocking | Prevents "Brother" being stored as a person's name |
-| Duplicate prevention | Same relationship never added twice |
-| Extraction log | Every extraction saved to `extractions.json` with timestamp |
+| Extract action (add/remove/update) | LLM determines action |
+| Update relationship graph | `graph.py` add/remove/update functions |
+| Store graph in JSON | `graph.json` with nodes and edges |
+| Only User→Person relationships | Enforced via prompt and code rules |
+| Generate contextual response | LLM uses updated graph context |
+| Handle multiple people in one message | Extracts list of relationships |
+| Persistent graph storage | Graph saved and reused across sessions |
+| Handle relationship updates | Replaces old relationship with new one |
+| Maintain removed relationships | Stored in `removed` list for reference |
+| Prevent duplicate relationships | Checked before adding new edge |
+| Ignore indirect relationships | Filters out non User→Person relations |
+| Ignore unnamed people | Skips entries without explicit names |
+| Block generic names as people | Prevents invalid names like "Brother" |
+| Empathetic responses | Uses past relationship context |
+| Log extractions | Stored with timestamps in JSON |
 
 ---
 
