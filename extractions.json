@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2026-04-07 00:09:53",
+    "message": "I have a friend named Sara.",
+    "extraction": [
+      {
+        "person": "Sara",
+        "relationship": "friend",
+        "action": "add"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-04-07 00:10:00",
+    "message": "I have a brother Noah and a cousin Sofia.",
+    "extraction": [
+      {
+        "person": "Noah",
+        "relationship": "brother",
+        "action": "add"
+      },
+      {
+        "person": "Sofia",
+        "relationship": "cousin",
+        "action": "add"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-04-07 00:10:40",
+    "message": "Sara is now my colleague.",
+    "extraction": [
+      {
+        "person": "Sara",
+        "relationship": "colleague",
+        "action": "add"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-04-07 00:10:51",
+    "message": "Max is a friend of my brother.",
+    "extraction": [
+      {
+        "person": "Max",
+        "relationship": "brother's friend",
+        "action": "add"
+      }
+    ]
+  }
+]

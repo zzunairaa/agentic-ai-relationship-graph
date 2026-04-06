@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    "User",
+    "Sara",
+    "Noah",
+    "Sofia"
+  ],
+  "edges": [
+    {
+      "source": "User",
+      "target": "Noah",
+      "relation": "brother"
+    },
+    {
+      "source": "User",
+      "target": "Sofia",
+      "relation": "cousin"
+    }
+  ],
+  "removed": [
+    {
+      "person": "Sara",
+      "relation": "friend"
+    }
+  ]
+}
