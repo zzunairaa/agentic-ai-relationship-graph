@@ -56,7 +56,7 @@ Relationships stored as JSON — exactly as required:
 
 ---
 
-## Assignment Examples — All Working
+## Assignment Examples
 
 **Example 1 — Adding a relationship:**
 ```
@@ -209,13 +209,13 @@ Note: The last entry returns `[]` — no new relationship extracted. But the age
 ## Design Decisions
 
 **Why keep removed nodes?**  
-Deleting a node loses context. Keeping history allows the agent to respond with empathy when a previously removed person is mentioned again — making the assistant feel more human.
+Deleting a node loses context. Keeping history allows the agent to respond with empathy when a previously removed person is mentioned again making the assistant feel more human.
 
 **Why a hybrid architecture?**  
-LLMs occasionally hallucinate indirect relationships despite prompt rules. A rule-based post-processing layer in `main.py` catches edge cases the LLM misses — combining the strengths of both neural and symbolic approaches.
+LLMs occasionally hallucinate indirect relationships despite prompt rules. A rule-based post-processing layer in `main.py` catches edge cases the LLM misses combining the strengths of both neural and symbolic approaches.
 
 **Why Groq?**  
-Free tier with fast inference. No credit card needed — ideal for development and testing.
+Free tier with fast inference. No credit card needed , ideal for development and testing.
 
 **Why FastAPI?**  
 Modern Python framework, clean separation between backend logic and frontend, automatic API documentation.
@@ -225,7 +225,7 @@ Modern Python framework, clean separation between backend logic and frontend, au
 ## Limitations
 
 - Only tracks User → Person relationships (by design, per assignment scope)
-- Relationship label quality depends on LLM — rare indirect cases may slip through
+- Relationship label quality depends on LLM due to which rare indirect cases may slip through
 - Could be extended with Neo4j for larger scale graph storage
 - Coreference resolution (he/she/they) would improve accuracy further
 
