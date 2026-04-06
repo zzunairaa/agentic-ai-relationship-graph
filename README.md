@@ -148,32 +148,6 @@ Use this option if you prefer to run the Python script directly on your host mac
 4.  **Access the App:** Open your browser to: [http://localhost:8000](http://localhost:8000)
 ---
 
-
-## Features & Implementation
-
-| Feature | Implementation |
-|--------|--------------|
-| Read user message | FastAPI `/chat` endpoint receives message |
-| Extract person name | LLM extracts from natural language |
-| Extract relationship type | LLM returns relationship label |
-| Extract action (add/remove/update) | LLM determines action |
-| Update relationship graph | `graph.py` add/remove/update functions |
-| Store graph in JSON | `graph.json` with nodes and edges |
-| Only User→Person relationships | Enforced via prompt and code rules |
-| Generate contextual response | LLM uses updated graph context |
-| Handle multiple people in one message | Extracts list of relationships |
-| Persistent graph storage | Graph saved and reused across sessions |
-| Handle relationship updates | Replaces old relationship with new one |
-| Maintain removed relationships | Stored in `removed` list for reference |
-| Prevent duplicate relationships | Checked before adding new edge |
-| Ignore indirect relationships | Filters out non User→Person relations |
-| Ignore unnamed people | Skips entries without explicit names |
-| Block generic names as people | Prevents invalid names like "Brother" |
-| Empathetic responses | Uses past relationship context |
-| Log extractions | Stored with timestamps in JSON |
-
----
-
 ## Extraction Log Sample (`extractions.json`)
 
 ```json
