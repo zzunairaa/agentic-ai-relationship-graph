@@ -35,7 +35,7 @@ Response + graph returned to frontend
 
 ## Graph Representation
 
-Relationships stored as JSON — exactly as required:
+Relationships stored as JSON 
 
 ```json
 {
