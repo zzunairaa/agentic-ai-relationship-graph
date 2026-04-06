@@ -1,4 +1,4 @@
-# Agentic AI — Relationship Graph
+# Agentic AI For Relationship Graph
 
 **Assignment:** Building a Simple Agentic AI with a Relationship Graph  
 **Tech Stack:** Python · FastAPI · Groq API (LLaMA 3.3 70B) · HTML/CSS/JS  
