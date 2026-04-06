@@ -104,7 +104,11 @@ my-agent/
 
 ---
 
-## How to Run
+##  How to Run the Project
+
+Before starting, get your **Groq API Key**:  
+ https://console.groq.com/keys
+
 
 ### Option 1: Run with Docker (Recommended)
 This method ensures the environment is identical to the one used during development and handles all dependencies automatically.
