@@ -210,15 +210,6 @@ Modern Python framework, clean separation between backend logic and frontend, au
 
 ---
 
-## Limitations
-
-- Only tracks User → Person relationships (by design, per assignment scope)
-- Relationship label quality depends on LLM due to which rare indirect cases may slip through
-- Could be extended with Neo4j for larger scale graph storage
-- Coreference resolution (he/she/they) would improve accuracy further
-
----
-
 ## References
 
 - Wei, J. et al. (2022). *Chain-of-Thought Prompting*. NeurIPS.  
