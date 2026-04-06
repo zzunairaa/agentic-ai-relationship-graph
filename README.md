@@ -229,11 +229,26 @@ Modern Python framework, clean separation between backend logic and frontend, au
 
 ## References
 
-- Wei, J. et al. (2022). Chain-of-Thought Prompting. NeurIPS.
-- Brown, T. et al. (2020). Language Models are Few-Shot Learners. NeurIPS.
-- He, L. et al. (2017). Deep Semantic Role Labeling. ACL.
-- Chiticariu, L. et al. (2013). Rule-Based IE is Dead! Long Live Rule-Based IE Systems! EMNLP.
-- Manning, C. et al. (2014). The Stanford CoreNLP NLP Toolkit. ACL.
-- Dong, X. et al. (2014). Knowledge Vault. KDD.
-- Tulving, E. (1972). Episodic and Semantic Memory.
-- Picard, R. (1997). Affective Computing. MIT Press.
+- Wei, J. et al. (2022). *Chain-of-Thought Prompting*. NeurIPS.  
+  https://arxiv.org/pdf/2201.11903
+
+- Brown, T. et al. (2020). *Language Models are Few-Shot Learners*. NeurIPS.  
+  https://arxiv.org/pdf/2005.14165
+
+- He, L. et al. (2017). *Deep Semantic Role Labeling*. ACL.  
+  https://aclanthology.org/P17-1044.pdf
+
+- Chiticariu, L. et al. (2013). *Rule-Based IE is Dead! Long Live Rule-Based IE Systems!* EMNLP.  
+  https://aclanthology.org/D13-1079.pdf
+
+- Manning, C. et al. (2014). *The Stanford CoreNLP NLP Toolkit*. ACL.  
+  https://nlp.stanford.edu/pubs/StanfordCoreNlp2014.pdf
+
+- Dong, X. et al. (2014). *Knowledge Vault*. KDD.  
+  https://www.cs.ubc.ca/~murphyk/papers/kv-kdd14.pdf
+
+- Tulving, E. (1972). *Episodic and Semantic Memory*.  
+  https://alicekim.ca/12.EpSem72.pdf
+
+- Picard, R. (1997). *Affective Computing*. MIT Press.  
+  https://arl.human.cornell.edu/linked%20docs/Picard%20Affective%20Computing.pdf
